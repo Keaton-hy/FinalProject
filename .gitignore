@@ -1,0 +1,8 @@
+/.metadata/
+/RemoteSystemsTempFiles/
+/.jxbrowser.userdata/
+/dvt/
+/Debug/
+__pycache__/
+*.py[cod]
+/base_station_gui/logs/
