@@ -3,10 +3,24 @@
 #include <stdio.h>
 #include "uart.h"
 
-void send_string(int objectNum, int angle, float distance, float radialWidth){
+void send_string(int direction){
     char buffer[50]; //sets up the string to be used for the data
 
-    sprintf(buffer, "Object %d:  %d  %.2f  %.2f", objectNum, angle, distance, radialWidth); //changes the data into a string
+    if (direction == 1){
+        sprintf(buffer, "Left Bumper Triggered"); //changes the data into a string
+    } else if (direction == 2) {
+        sprintf(buffer, "Right Bumper Triggered"); //changes the data into a string
+    } else if (direction == 3) {
+        sprintf(buffer, "Middle of Bumpers Triggered"); //changes the data into a string
+    } else if (direction == 4) {
+        sprintf(buffer, "Cliff Left"); //changes the data into a string
+    } else if (direction == 5) {
+        sprintf(buffer, "Cliff Front Left"); //changes the data into a string
+    } else if (direction == 6) {
+        sprintf(buffer, "Cliff Front Right"); //changes the data into a string
+    } else if (direction == 7) {
+        sprintf(buffer, "Cliff Right"); //changes the data into a string
+    }
 
     int j;
 

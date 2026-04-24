@@ -8,7 +8,7 @@
 #ifndef PUTTYCOM_H_
 #define PUTTYCOM_H_
 
-void send_string(int objectNum, int angle, float distance, float radialWidth);
+void send_string(int direction);
 
 void send_num(int angle, float distance);
 
